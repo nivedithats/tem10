@@ -6,7 +6,13 @@
     <title>Document</title>
 </head>
 <body>
+
+    <div id="result"></div>
     <script>
+
+        let result = document.getElementById('result')
+
+
         let array = [7,1,5,3,6]
         let minimum = array[0];
         let index = 0;
@@ -17,7 +23,7 @@
                 index = i
             }
         }
-        console.log(minimum);
+        
         console.log(index);
 
 
@@ -28,10 +34,18 @@
                 maximum = array[j];
             }
         }
+
+ result.innerHTML += `<h2> The Minimum value is = ${minimum}</h2>` 
+ result.innerHTML += `<h2> The Maximum value is = ${maximum}</h2>` 
+ result.innerHTML += `<h2> The Maximum-Minimum value is = ${maximum-minimum}</h2>` 
+
+
+        console.log(minimum);
         console.log(maximum);
         console.log(maximum-minimum);
-
         
+
+
 
     </script>
 </body>
