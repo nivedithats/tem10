@@ -4,10 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>js</title>
+    <style>
+        *{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .card{
+            width: 450px;
+            height: 300px;
+            border: none;
+            outline: none;
+            border: 1px solid #ccc;
+            box-shadow: 0px 0px 10px #ccc ;
+            padding: 10px;
+
+             
+
+        }
+        .card h1{
+            /*background: linear-gradient(45deg, blue,yellow) ;*/
+            background: url(https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg) no-repeat center;
+            background-size: cover;
+            -webkit-text-fill-color:transparent;
+            -webkit-background-clip: text;
+            font-size: 3rem;
+            font-weight: 400;
+        }
+    </style>
 </head>
 <body>
+    <center>
+        
+      <div class="card">
+        <h1>Stock Buy and Sell</h1>
 
     <div id="result"></div>
+</div>
+
+</center>
+
+
     <script>
 
         let result = document.getElementById('result')
@@ -37,7 +72,7 @@
 
  result.innerHTML += `<h2> The Minimum value is = ${minimum}</h2>` 
  result.innerHTML += `<h2> The Maximum value is = ${maximum}</h2>` 
- result.innerHTML += `<h2> The Maximum-Minimum value is = ${maximum-minimum}</h2>` 
+ result.innerHTML += `<h2> The Maximum profite  is = ${maximum-minimum}</h2>` 
 
 
         console.log(minimum);
